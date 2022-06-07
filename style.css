@@ -1,0 +1,811 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Noto Sans TC', sans-serif;
+}    
+
+
+
+@media screen and (max-width: 720px){
+    .container{
+        max-width:375px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .navbar{
+        border-bottom:#FFD153 2px solid;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px 20px;
+
+    }
+    .navbar img{
+        width: 130.84px;
+        height: 24px;
+    }
+
+    .navbar a{
+        width: 128px;
+        background-color: #FF5D50;
+        border-radius: 20px;
+        color: #FFFFFF;
+        text-align:center;
+        padding: 8px 0px;
+        font-size: 16px;
+        text-decoration: none;
+        line-height: 24px;
+    }
+
+    .main{
+        background-image: url("img/bg_home_sm.svg");
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        margin-bottom: 92px;
+    }
+
+
+    .main h1{
+        color:#56C4C5;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 32px 0 8px 0;
+    }
+
+    .main-slogan{
+        font-size: 32px;
+        line-height: 46px;
+        font-weight: 900;
+        padding-bottom: 16px;
+        color: #221E1F;
+    }    
+
+    .main-content{
+        font-size: 16px;
+        line-height: 24px;        
+        padding-bottom: 32px;
+        color: #221E1F;
+    }
+
+    .main-img{
+        max-width: 304.32px;
+        margin: 0 auto;
+    }
+
+    .platform{
+        text-align: center; 
+        background-image: url("img/Ellipse\ 3.svg");
+        background-repeat: no-repeat;
+        background-size: 126px;
+        background-position:left -77px top 15px;
+        margin-bottom: 60px;
+    }
+
+    .platform img{
+        height: 60px;
+        width: 60px;
+        margin: 0 auto; 
+        margin-bottom: 16px;
+    }
+
+    h2{
+        font-size: 28px;
+        font-weight:bold ;
+        color: #221E1F;
+    }
+
+    .platform h2{
+        margin-bottom: 32px;
+    }
+
+    
+    .platform h3{                         
+        font-size: 18px;
+        font-weight:bold ;
+        margin-bottom: 16px;
+        color: #221E1F;
+        line-height: 26px;
+    }
+
+    .platform p{
+        font-size: 16px;
+        line-height: 24px;
+        color: #747474;
+        margin-bottom: 24px;
+    }
+
+    .characters{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-image: url("img/Ellipse 18.svg");
+        background-repeat: no-repeat;
+        background-size: 135px;
+        background-position:right -47px bottom 0;
+    }
+
+    .characters-content{
+        font-size: 18px;
+        margin-bottom: 32px;
+    }
+    .characters h2{
+        margin-bottom: 16px;
+        line-height: 40px;
+
+    }
+    .characters h3{
+        font-size: 16px;
+        color: #56C4C5;
+        font-weight: bold;
+        text-align: center;
+        padding: 16px;
+        line-height: 26px;
+    }
+
+    .characters-card{
+        width: 260px;
+        border-radius: 10px;
+        box-shadow: 0px 6px 7px 0px rgba(230,230,230,1);
+        margin-bottom: 24px;
+        background-color:#FFFFFF ;
+        padding-bottom: 24px;
+    }
+    
+    .characters-card img{
+        border-radius:10px 10px 0 0;
+    }
+
+    .characters-card p{
+        line-height: 24px;
+
+    }
+
+    .pool{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 24px;
+    }
+
+    .pool h2{
+        margin:36px 0 ;
+
+    }
+
+    .pool p{
+        line-height: 24px;
+        font-size: 16px;
+        color: #221E1F;
+        margin-bottom: 28px ;
+    }
+    
+    .pool a{
+        width: 136px;
+        background-color: #56C4C5;
+        border-radius: 24.5px;
+        color: #FFFFFF;
+        text-decoration: none;
+        box-sizing: border-box;
+        padding: 12px 32px;
+        margin-bottom: 32px;
+        line-height: 26px;
+        
+    }
+    .pool-card{
+        width: 230px;
+        box-shadow: 0px 0px 10px 1px rgba(230,230,230,1);
+        border-radius: 10px;
+        margin: 24px;
+        padding: 32px 41px 48px 24px;
+        background-color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content:start ;
+        text-align: start;
+        box-sizing: border-box;
+    }
+
+    .pool-icons{
+        width: 86px;
+        height: 86px;
+        box-shadow: 0px 0px 10px 1px rgba(230,230,230,1);
+        margin-bottom: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+    }
+
+    .pool-card h3{
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .pool-card p{
+        font-size: 16px;  
+        line-height: 24px;
+    }
+
+    .icon-green-text{
+        color: #56C4C5;
+
+    }
+
+    .praise h2{
+        text-align: center;
+        margin-bottom: 88px;
+    }
+
+    .praise{
+        width: 100%;
+    }
+
+    .praise-card{
+        position: relative;
+        width: 100%;
+        box-shadow: 0px 0px 10px 1px rgba(230,230,230,1);
+        border-radius: 10px;
+        /* margin: 24px; */
+        /* padding: 32px 41px 48px 24px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: start ;
+        text-align: start;
+        margin-bottom: 40px;
+    }
+
+
+    .name-and-rank{
+        display: flex;
+        justify-content: space-between;
+        padding-right: 42.09px;
+    }
+
+
+    .name-and-rank span{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .comment{
+        margin: 48px 16px 16px 17px ;
+        font-size: 16px;
+        color: #221E1F;
+        line-height: 24px;
+        padding-bottom: 16px;
+        border-bottom:  1px solid #DDDDDD;
+    }
+
+    .praise-personalinfo{
+        margin: 0 16px 32px 17px ;
+    } 
+
+    .no-mobile{
+        display: none;
+    }
+    
+    .corp{
+        font-size: 16px;
+        font-weight: bold;
+        margin: 16px 0 8px 0;
+        line-height: 24px;
+    }
+
+
+    .praise-photo{
+        height: 80px;
+        width: 80px;
+        border-radius: 100%;
+        position: absolute;
+        top: -50px;
+        left: 32px;
+    }
+
+    .footer-chat{
+        height: 461px;
+        background-image: url("img/footer_sm.svg");
+        background-repeat: no-repeat;
+        /* background-size: ; */
+        background-position: top;
+        text-align: center;
+        display:flex ;
+        flex-direction: column;
+        align-items: center;
+        background-size: contain;
+
+    }
+
+    .footer-chat h2{
+        margin: 293px 0 24px 0 ;
+    }
+
+    .footer-chat a{
+        width: 136px;
+        background-color: #56C4C5;
+        border-radius: 24.5px;
+        color: #FFFFFF;
+        text-decoration: none;
+        box-sizing: border-box;
+        padding: 12px 32px;
+        margin-bottom: 32px;
+        line-height: 26px;
+        
+    }
+
+    .footer p{
+        background-color: #F5F5F5;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 16px 0 16px 0;
+        text-align: center;
+        color: #221E1F;
+    }
+}
+
+
+@media screen and (min-width: 721px){
+    .container{
+        max-width: 1088px;
+        margin: 0 auto;
+        padding: 0 30px;
+
+    }
+
+    .navbar{
+        border-bottom:#FFD153 2px solid;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px 24px;
+
+    }
+
+    .navbar a{
+        width: 128px;
+        box-sizing: border-box;
+        background-color: #FF5D50;
+        border-radius: 20px;
+        color: #FFFFFF;
+        text-align:center;
+        padding: 12px 0px;
+        font-size: 16px;
+        text-decoration: none;
+        line-height: 24px;
+    }
+
+    .navbar img{
+        width: 218.06px;
+        height: 40px;
+    }
+
+    .main{
+        background-repeat: no-repeat;
+        background-position: right;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 534px;
+        margin-bottom: 217px;
+    }
+
+
+
+    .main h1{
+        color:#56C4C5;
+        font-size: 18px;
+        font-weight: bold;
+        padding-bottom:8px;
+        line-height: 46px;
+    }
+
+    .main-slogan{
+        font-size: 48px;
+        line-height: 70px;
+        font-weight: 900;
+        padding-bottom: 16px;
+        color: #221E1F;
+    }    
+
+    .main-content{
+        font-size: 20px;
+        line-height: 29px;
+        color: #221E1F;
+    }
+
+    .main-img{
+        margin: 0 auto;
+        flex-grow :1;
+        max-width: 532px;
+    }
+
+    .main-text{
+        width: 455px;
+    }
+
+    
+    .platform{
+        text-align: center; 
+        margin-bottom: 100px;
+    }
+
+    .platform img{
+        height: 90px;
+        width: 90px;
+        margin-bottom: 24px;
+        
+    }
+
+    h2{
+        font-size: 32px;
+        font-weight:bold ;
+        color: #221E1F;
+        line-height: 46px;
+    }
+
+    .platform h2{
+        margin-bottom: 48px;
+    }
+
+    
+    .platform h3{                         
+        font-size: 24px;
+        font-weight:bold ;
+        margin-bottom: 24px;
+        color: #221E1F;
+        line-height: 35px;
+        white-space: nowrap;
+
+    }
+
+    .platform p{
+        font-size: 16px;
+        line-height: 24px;
+        color: #747474;
+    }
+
+    .platform-list{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .facebook-messenger {
+        width:  244px ;
+    }
+    
+    .Line{
+        width: 240px;
+    }
+    
+    .instergram{
+        width: 222px;
+    }
+
+    .characters{
+        text-align: center;
+        /* background-image: url("img/Ellipse 18.svg");
+        background-repeat: no-repeat;
+        background-size: 135px;
+        background-position:right -47px bottom 0; */
+        margin-bottom: 100px;
+    }
+
+    .characters-content{
+        font-size: 20px;
+        margin-bottom: 48px;
+    }
+
+    .characters h2{
+        margin-bottom: 16px;
+        line-height: 46px;
+    }
+
+    .characters h3{
+        font-size: 16px;
+        color: #56C4C5;
+        font-weight: bold;
+        text-align: center;
+        padding: 16px;
+        line-height: 24px;
+
+    }
+
+    .characters-card{
+        /* height: 388px; */
+        width: 260px;
+        border-radius: 10px;
+        box-shadow: 0px 6px 7px 0px rgba(230,230,230,1);
+        margin-bottom: 24px;
+        background-color:#FFFFFF ;
+        padding-bottom: 24px;
+
+    }
+
+    .characters-cards{
+        width: 1088px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .characters-card img{
+        border-radius:10px 10px 0 0;
+    }
+
+    .characters-card p{
+        font-size: 16px;
+        line-height: 24px;
+
+    }
+
+    .pool{
+        display: flex;
+        flex-direction: row-reverse;
+        width: 1039px;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 72px;
+    }
+
+    .pool h2{
+        margin-bottom: 16px;
+    }
+
+    .pool p{
+        line-height: 26px;
+        font-size: 16px;
+        color: #221E1F;
+        margin-bottom: 36px;
+    }
+    
+    .pool a{
+        width: 136px;
+        background-color: #56C4C5;
+        border-radius: 24.5px;
+        color: #FFFFFF;
+        text-decoration: none;
+        box-sizing: border-box;
+        padding: 12px 32px;
+        margin-bottom: 32px;
+        line-height: 26px;
+        
+    }
+    .pool-card{
+        box-sizing: border-box;
+        width: 230px;
+        box-shadow: 0px 0px 10px 1px rgba(230,230,230,1);
+        border-radius: 10px;
+        padding: 32px 32px 0px 32px;
+        background-color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content:start ;
+        text-align: start;
+        margin-bottom: 28px;
+    }
+
+    .pool-cards{
+        display: flex;
+        flex-direction:row-reverse ;
+        flex-wrap: wrap;
+        width: 507px;
+        height: 588px;
+        justify-content: space-between;
+    }
+
+    .pool-icons{
+        width: 86px;
+        height: 86px;
+        box-shadow: 0px 0px 10px 1px rgba(230,230,230,1);
+        margin-bottom: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+    }
+
+    .pool-card h3{
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .pool-card p{
+        font-size: 16px;  
+        height: 48px;
+        line-height: normal;
+    }
+
+    .icon-green-text{
+        color: #56C4C5;
+
+    }
+
+    .pool-text{
+        width: 395px;
+    }
+
+    .praise h2{
+        text-align: center;
+        margin-bottom: 88px;
+    }
+
+    .praise{
+        width: 100%;
+    }
+
+    .praise-cards{
+        display: flex;
+        max-width: 1088px;
+
+    }
+
+    .praise-card{
+        position: relative;
+        width: 30%;
+        box-shadow: 0px 0px 10px 1px rgba(230,230,230,1);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start ;
+        text-align: start;
+        margin-bottom: 40px;
+        background-color: #FFFFFF;
+
+    }
+
+
+    .name-and-rank{
+        display: flex;
+        justify-content: space-between;
+        padding-right: 42.09px;
+    }
+
+
+    .name-and-rank span{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .comment{
+        margin: 48px 16px 0 17px ;
+        font-size: 16px;
+        color: #221E1F;
+        line-height: 24px;
+        border-bottom:  1px solid #DDDDDD;
+        min-height: 104px;
+    }
+
+    .praise-personalinfo{
+        margin: 0 16px 32px 17px ;
+    } 
+
+    .no-mobile{
+        margin-left: 16px;
+    }
+
+    .for-mobile{
+        display: none;
+    }
+    
+    .corp{
+        font-size: 16px;
+        font-weight: bold;
+        margin: 16px 0 8px 0;
+        line-height: 24px;
+
+    }
+
+
+    .praise-photo{
+        height: 80px;
+        width: 80px;
+        border-radius: 100%;
+        position: absolute;
+        top: -50px;
+        left: 32px;
+
+    }
+
+    .footer-chat{
+        height: 503px;
+        background-image: url("img/home_footer.svg");
+        background-repeat: no-repeat;
+        /* background-size: ; */
+        background-position:center center;
+        text-align: center;
+        display:flex ;
+        flex-direction: column;
+        align-items: center;
+        background-size: cover;
+
+    }
+
+    .footer-chat h2{
+        margin: 260px 0 48px 0 ;
+    }
+
+    .footer-chat a{
+        height: 49px;
+        width: 136px;
+        background-color: #56C4C5;
+        border-radius: 24.5px;
+        color: #FFFFFF;
+        text-decoration: none;
+        box-sizing: border-box;
+        padding: 12px 32px;
+        margin-bottom: 32px;
+        line-height: normal;
+        
+    }
+
+    .footer p{
+        background-color: #F5F5F5;
+        font-size: 16px;
+        height: 24px;
+        line-height: normal;
+        padding: 16px 0 16px 0;
+        text-align: center;
+        color: #221E1F;
+    }
+
+    .outcontainer{
+        background-image: url("img/bg_home.svg"), url("img/ball01.svg"), url("img/ball02.svg"), url("img/ball03.svg");
+        background-repeat: no-repeat;
+        background-position: right 0px top 0px , left -222px top 589px, right -100px top 1694px , left 50px top 2640px;
+    }
+}
